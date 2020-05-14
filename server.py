@@ -4,11 +4,11 @@ import psycopg2
 from crawler import database
 app = Flask(__name__)
 
-try:
+try: 
     connection = psycopg2.connect(
         user="postgres",
         password="1234",
-        host="127.0.0.1",
+        host="192.168.31.171",
         port="5432",
         database="postgres",
     )
